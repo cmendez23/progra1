@@ -1,0 +1,21 @@
+﻿     static void Main(string[] args)
+        {
+            int numero,resultado;
+            string p;
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.BackgroundColor = ConsoleColor.Green;
+            inicio:
+            Console.Clear();
+            Console.WriteLine("\t\t\t\tBienvenido, piensa en un número positivo y yo lo adivinaré: ");
+            Console.WriteLine("\n- Ahora multiplicalo por dos (*2)");
+            Console.WriteLine("\n- Sumale ocho (+8)");
+            Console.WriteLine("\n- Multiplicalo por cinco (x5)");
+            Console.WriteLine("\n\n\t\t\t Ingresa el resultado: ");
+            numero = Convert.ToInt32(Console.ReadLine());
+            resultado = ((numero / 5) - 8) / 2;
+            Console.Write("\n\tEl número que pensaste es: "+resultado);
+            
+            Console.ReadKey();
+        }
+    }
+}
